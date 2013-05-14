@@ -71,7 +71,8 @@ foreach my $log (@{$logs}){
 
 	say "			<ul>";
 	if( $log->{chat} ){
-		foreach my $chat (@{$log->{chat}}){
+		my @chatlist = @{$log->{chat}};
+		while( my $chat = pop(@chatlist) ){
 			my($y,$m,$d,$t) = to_localtime( $chat );
 			say qq(				<li class="prev $chat->{screen_name}"> <span class='name'>$chat->{screen_name}</span> <span class='text'>$chat->{text}</span> <span class='time'>$d $t</span> </li>);
 		}
