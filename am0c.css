@@ -1,0 +1,33 @@
+.yearly {}
+.monthly {}
+.daily {}
+.single {}
+.chat {}
+ul {
+	margin-bottom:20px;
+}
+li {
+	list-style:none;
+	line-height:20px;	
+	clear:both;
+}
+li.am0c {
+}
+li .name{
+	display:block;
+	float:left;
+	width:100px;
+	font-weight:bold;
+}
+li .text{
+}
+li .time{
+	margin-left:10px;
+	font-size:11px;
+}
+
+li.prev {color:#999;
+	line-height:20px;
+}
+li.am0c.prev{}
+

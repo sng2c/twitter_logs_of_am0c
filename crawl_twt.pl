@@ -5,7 +5,7 @@ use warnings;
 use utf8;
 use 5.010;
 
-sub amoc{'am0c'};
+sub am0c{'am0c'};
 
 use Net::Twitter;
 use JSON;
@@ -53,10 +53,10 @@ while($cnt--){
 
 	my $sts = [];	
 	if( $max_id==0 ){
-		$sts = $api->user_timeline({screen_name=>amoc ,trim_user=>1,count=>$max,include_rts=>1});
+		$sts = $api->user_timeline({screen_name=>am0c ,trim_user=>1,count=>$max,include_rts=>1});
 	}
 	else{
-		$sts = $api->user_timeline({screen_name=>amoc ,trim_user=>1,count=>$max,include_rts=>1,max_id=>$max_id});
+		$sts = $api->user_timeline({screen_name=>am0c ,trim_user=>1,count=>$max,include_rts=>1,max_id=>$max_id});
 	}
 
 	if( !$sts || @{$sts} == 0 ){

@@ -5,7 +5,7 @@ use warnings;
 use utf8;
 use 5.010;
 
-sub amoc{'am0c'};
+sub am0c{'am0c'};
 
 use Net::Twitter;
 use JSON;
@@ -38,7 +38,7 @@ foreach my $twt (@{$twt}){
 	my $t = {
 		created_at=> $twt->{created_at},
 		id=> $twt->{id},
-		screen_name=>amoc,
+		screen_name=>am0c,
 		in_reply_to_screen_name=> $twt->{in_reply_to_screen_name},
 		in_reply_to_status_id=> $twt->{in_reply_to_status_id},
 		text=> $twt->{text},
