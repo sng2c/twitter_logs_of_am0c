@@ -21,7 +21,6 @@ sub to_localtime{
 }
 
 say <<HEAD;
-
 <!doctype html>
 <html>
 	<head>
